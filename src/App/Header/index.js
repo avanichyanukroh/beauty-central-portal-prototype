@@ -5,32 +5,33 @@ class Header extends Component {
         return (
             <header className="navbar pcoded-header navbar-expand-lg navbar-light">
                 <div className="m-header">
-                    <a className="mobile-menu" id="mobile-collapse1" href="#"><span></span></a>
-                    <a href="index.html">
+                    <div className="mobile-menu" id="mobile-collapse1" href="#"><span></span></div>
+                    <div href="index.html">
                         <img className="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
-                    </a>
+                    </div>
                 </div>
-                <a className="mobile-menu" id="mobile-header" href="#">
+                <div className="mobile-menu" id="mobile-header" href="#">
                     <i className="feather icon-more-horizontal"></i>
-                </a>
+                </div>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav mr-auto">
-                        <li><a href="#" className="full-screen" onClick="#toggleFullScreen()"><i className="feather icon-maximize"></i></a></li>
+                        {/* <li><div href="#" className="full-screen" onClick="#toggleFullScreen()"><i className="feather icon-maximize"></i></div></li> */}
+                        <li><div href="#" className="full-screen"><i className="feather icon-maximize"></i></div></li>
                         <li className="nav-item dropdown">
-                            <a className="dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+                            <div className="dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</div>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                <li><div className="dropdown-item" href="#">Action</div></li>
+                                <li><div className="dropdown-item" href="#">Another action</div></li>
+                                <li><div className="dropdown-item" href="#">Something else here</div></li>
                             </ul>
                         </li>
                         <li className="nav-item">
                             <div className="main-search">
                                 <div className="input-group">
                                     <input type="text" id="m-search" className="form-control" placeholder="Search . . ." />
-                                    <a href="#" className="input-group-append search-close">
+                                    <div href="#" className="input-group-append search-close">
                                         <i className="feather icon-x input-group-text"></i>
-                                    </a>
+                                    </div>
                                     <span className="input-group-append search-btn btn btn-primary">
                                         <i className="feather icon-search input-group-text"></i>
                                     </span>
@@ -41,13 +42,13 @@ class Header extends Component {
                     <ul className="navbar-nav ml-auto">
                         <li>
                             <div className="dropdown">
-                                <a className="dropdown-toggle" href="#" data-toggle="dropdown"><i className="icon feather icon-bell"></i></a>
+                                <div className="dropdown-toggle" href="#" data-toggle="dropdown"><i className="icon feather icon-bell"></i></div>
                                 <div className="dropdown-menu dropdown-menu-right notification">
                                     <div className="noti-head">
                                         <h6 className="d-inline-block m-b-0">Notifications</h6>
                                         <div className="float-right">
-                                            <a href="#" className="m-r-10">mark as read</a>
-                                            <a href="#">clear all</a>
+                                            <div href="#" className="m-r-10">mark as read</div>
+                                            <div href="#">clear all</div>
                                         </div>
                                     </div>
                                     <ul className="noti-body">
@@ -86,30 +87,30 @@ class Header extends Component {
                                         </li>
                                     </ul>
                                     <div className="noti-footer">
-                                        <a href="#">show all</a>
+                                        <div href="#">show all</div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" className="displayChatbox"><i className="icon feather icon-mail"></i></a></li>
+                        <li><div href="#" className="displayChatbox"><i className="icon feather icon-mail"></i></div></li>
                         <li>
                             <div className="dropdown drp-user">
-                                <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                                <div href="#" className="dropdown-toggle" data-toggle="dropdown">
                                     <i className="icon feather icon-settings"></i>
-                                </a>
+                                </div>
                                 <div className="dropdown-menu dropdown-menu-right profile-notification">
                                     <div className="pro-head">
                                         <img src="assets/images/user/avatar-1.jpg" className="img-radius" alt="User-Profile-Image" />
                                         <span>John Doe</span>
-                                        <a href="auth-sign-in-social.html" className="dud-logout" title="Logout">
+                                        <div href="auth-sign-in-social.html" className="dud-logout" title="Logout">
                                             <i className="feather icon-log-out"></i>
-                                        </a>
+                                        </div>
                                     </div>
                                     <ul className="pro-body">
-                                        <li><a href="#" className="dropdown-item"><i className="feather icon-settings"></i> Settings</a></li>
-                                        <li><a href="#" className="dropdown-item"><i className="feather icon-user"></i> Profile</a></li>
-                                        <li><a href="#" className="dropdown-item"><i className="feather icon-mail"></i> My Messages</a></li>
-                                        <li><a href="#" className="dropdown-item"><i className="feather icon-lock"></i> Lock Screen</a></li>
+                                        <li><div href="#" className="dropdown-item"><i className="feather icon-settings"></i> Settings</div></li>
+                                        <li><div href="#" className="dropdown-item"><i className="feather icon-user"></i> Profile</div></li>
+                                        <li><div href="#" className="dropdown-item"><i className="feather icon-mail"></i> My Messages</div></li>
+                                        <li><div href="#" className="dropdown-item"><i className="feather icon-lock"></i> Lock Screen</div></li>
                                     </ul>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class NavigationMenu extends Component {
     render() {
@@ -22,32 +23,37 @@ class NavigationMenu extends Component {
                                 <label>Navigation</label>
                             </li>
                             <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" className="nav-item">
-                                <a href="index.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-home"></i></span><span className="pcoded-mtext">Dashboard</span></a>
-                            </li>
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>Other</label>
+                            <Link to="/App/Dashboard" className="nav-link">
+                                <span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                <span className="pcoded-mtext">Dashboard</span>
+                            </Link>
                             </li>
                             <li data-username="Menu levels Menu level 2.1 Menu level 2.2" className="nav-item pcoded-hasmenu">
-                                <a href="#" className="nav-link "><span className="pcoded-micon"><i className="feather icon-menu"></i></span><span className="pcoded-mtext">Menu levels</span></a>
+                                <a href="#" className="nav-link">
+                                    <span className="pcoded-micon"><i className="feather icon-menu"></i></span>
+                                    <span className="pcoded-mtext">Content</span>
+                                </a>
                                 <ul className="pcoded-submenu">
-                                    <li className=""><a href="" className="">Menu Level 2.1</a></li>
-                                    <li className="pcoded-hasmenu">
-                                        <a href="#" className="">Menu level 2.2</a>
-                                        <ul className="pcoded-submenu">
-                                            <li className=""><a href="" className="">Menu level 3.1</a></li>
-                                            <li className=""><a href="" className="">Menu level 3.2</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><Link to="/App/ViewContent">View Content</Link></li>
+                                    <li><Link to="/App/Discover">Discover</Link></li>
                                 </ul>
                             </li>
-                            <li data-username="Disabled Menu" className="nav-item disabled"><a href="#" className="nav-link"><span className="pcoded-micon"><i className="feather icon-power"></i></span><span className="pcoded-mtext">Disabled menu</span></a></li>
-                            <li data-username="Sample Page" className="nav-item active"><a href="sample-page.html" className="nav-link"><span className="pcoded-micon"><i className="feather icon-sidebar"></i></span><span className="pcoded-mtext">Sample page</span></a></li>
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>Support</label>
+                            <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" className="nav-item">
+                                <Link to="/App/Users" className="nav-link">
+                                    <span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                    <span className="pcoded-mtext">Users</span>
+                                </Link>
                             </li>
-                            <li data-username="Documentation" className="nav-item"><a href="http://html.codedthemes.com/datta-able/bootstrap/default/docs.html" className="nav-link" target="_blank"><span className="pcoded-micon"><i className="feather icon-book"></i></span><span className="pcoded-mtext">Documentation</span></a></li>
-                            <li data-username="Need Support" className="nav-item"><a href="https://codedthemes.support-hub.io/" className="nav-link" target="_blank"><span className="pcoded-micon"><i className="feather icon-help-circle"></i></span><span className="pcoded-mtext">Need
-                                        support ?</span></a></li>
+                            <li data-username="Menu levels Menu level 2.1 Menu level 2.2" className="nav-item pcoded-hasmenu">
+                                <a href="#" className="nav-link">
+                                    <span className="pcoded-micon"><i className="feather icon-menu"></i></span>
+                                    <span className="pcoded-mtext">Subscription</span>
+                                </a>
+                                <ul className="pcoded-submenu">
+                                    <li><Link to="/App/ViewContent">Subscribers</Link></li>
+                                    <li><Link to="/App/Discover">Products</Link></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
