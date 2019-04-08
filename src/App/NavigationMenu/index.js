@@ -14,7 +14,7 @@ class NavigationMenu extends Component {
                         </div>
                         <span className="b-title">Beauty Central</span>
                     </a>
-                    <a className="mobile-menu" id="mobile-collapse" href="#"><span></span></a>
+                    <a className="mobile-menu" id="mobile-collapse" style={{cursor: "pointer"}}><span></span></a>
                 </div>
                     {/* <!-- end Logo is hear --> */}
                     <div className="navbar-content scroll-div">
@@ -29,7 +29,7 @@ class NavigationMenu extends Component {
                             </Link>
                             </li>
                             <li data-username="Menu levels Menu level 2.1 Menu level 2.2" className="nav-item pcoded-hasmenu">
-                                <a href="#" className="nav-link">
+                                <a className="nav-link" style={{cursor: "pointer"}}>
                                     <span className="pcoded-micon"><i className="feather icon-menu"></i></span>
                                     <span className="pcoded-mtext">Content</span>
                                 </a>
@@ -45,7 +45,7 @@ class NavigationMenu extends Component {
                                 </Link>
                             </li>
                             <li data-username="Menu levels Menu level 2.1 Menu level 2.2" className="nav-item pcoded-hasmenu">
-                                <a href="#" className="nav-link">
+                                <a className="nav-link" style={{cursor: "pointer"}}>
                                     <span className="pcoded-micon"><i className="feather icon-menu"></i></span>
                                     <span className="pcoded-mtext">Subscription</span>
                                 </a>

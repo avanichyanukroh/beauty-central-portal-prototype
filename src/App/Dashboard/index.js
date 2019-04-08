@@ -1,8 +1,13 @@
 import React, { Component, Fragment } from 'react';
+import { pcoded } from 'assets/js/pcoded.js';
 
 import BreadCrumb from 'ReusableComponent/BreadCrumb';
 
 class Dashboard extends Component {
+	componentDidMount() {
+		pcoded();
+	}
+	
 	render() {
 		return (
 			<Fragment>

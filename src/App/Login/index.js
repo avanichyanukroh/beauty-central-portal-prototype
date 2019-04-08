@@ -19,7 +19,7 @@ class Login extends Component {
                         <div className="form-group">
                             <input type="text" id="login-input" className="form-control fadeIn second" name="username" placeholder="Username" />
                             <input type="text" id="login-input" className="form-control fadeIn third" name="password" placeholder="Password" />
-                            <Link to="/App/Dashboard"><button type="submit" className="btn btn-primary fadeIn fourth">Submit</button></Link>
+                            <Link to="/App/Dashboard"><div className="btn btn-primary fadeIn fourth">Submit</div></Link>
                         </div>
                         {/* Remind Passowrd */}
                         <div id="formFooter">

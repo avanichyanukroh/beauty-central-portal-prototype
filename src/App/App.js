@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { pcoded } from 'assets/js/pcoded.js';
 
+import MainContainer from 'ReusableComponent/MainContainer';
 import NavigationMenu from 'App/NavigationMenu';
 import Header from 'App/Header';
 import Login from 'App/Login';
@@ -16,9 +16,6 @@ import UnknownPage from 'ReusableComponent/UnknownPage';
 import 'App/App.css';
 
 class App extends Component {
-	componentDidMount() {
-		pcoded();
-	}
 	
 	render() {
 		return (
@@ -49,24 +46,16 @@ class App extends Component {
 					{/* <!-- [ Main Content ] start --> */}
 
 					<Switch>
-						<Fragment>
-							<Route exact path="/" component={Login} />
-							<div className="pcoded-main-container">
-								<div className="pcoded-wrapper">
-									<div className="pcoded-content">
-										<div className="pcoded-inner-content">
-											<Route path="/App/Dashboard" component={Dashboard} />
-											<Route path="/App/ViewContent" component={ViewContent} />
-											<Route path="/App/Discover" component={Discover} />
-											<Route path="/App/Users" component={Users} />
-											<Route path="/App/Subscribers" component={Subscribers} />
-											<Route path="/App/Products" component={Products} />
-										</div>
-									</div>
-								</div>
-							</div>
-							<Route component={UnknownPage} />
-						</Fragment>
+						<Route exact path="/" component={Login} />
+							<MainContainer>
+								<Route path="/App/Dashboard" component={Dashboard} />
+								<Route path="/App/ViewContent" component={ViewContent} />
+								<Route path="/App/Discover" component={Discover} />
+								<Route path="/App/Users" component={Users} />
+								<Route path="/App/Subscribers" component={Subscribers} />
+								<Route path="/App/Products" component={Products} />
+							</MainContainer>
+						<Route component={UnknownPage} />
 					</Switch>
 
 					{/* <!-- [ Main Content ] end --> */}
