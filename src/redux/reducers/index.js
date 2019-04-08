@@ -39,6 +39,73 @@ const initialState = {
             creator: "Halle Berry",
             published: "03/15/19"
         }
+    ],
+    users: [
+        {
+            user_id: 1,
+            firstName: "Taylor",
+            lastName: "Swift",
+            email: "TSwift@gmail.com",
+            gender: "Female",
+            race: "Caucasian",
+            hairType: "Curly",
+            skinType: "Dry",
+            comments: "13",
+            likes: "22",
+            joined: "03/01/19"
+        },
+        {
+            user_id: 2,
+            firstName: "Kim",
+            lastName: "Kardashian",
+            email: "KKardashian@gmail.com",
+            gender: "Female",
+            race: "Caucasian",
+            hairType: "Wavy",
+            skinType: "Oily",
+            comments: "9",
+            likes: "20",
+            joined: "03/14/19"
+        },
+        {
+            user_id: 3,
+            firstName: "Megan",
+            lastName: "Fox",
+            email: "MFox@gmail.com",
+            gender: "Female",
+            race: "Caucasian",
+            hairType: "Straight",
+            skinType: "Oily",
+            comments: "8",
+            likes: "17",
+            joined: "03/15/19"
+        },
+        {
+            user_id: 4,
+            firstName: "Beyonce",
+            lastName: "Knowles",
+            email: "BKnowles@gmail.com",
+            gender: "Female",
+            race: "African American",
+            hairType: "Curly",
+            skinType: "Combination",
+            comments: "5",
+            likes: "11",
+            joined: "03/21/19"
+        },
+        {
+            user_id: 5,
+            firstName: "Mila",
+            lastName: "Kunis",
+            email: "MKunis@gmail.com",
+            gender: "Female",
+            race: "Caucasian",
+            hairType: "Straight",
+            skinType: "Dry",
+            comments: "3",
+            likes: "5",
+            joined: "03/29/19"
+        }
     ]
 }
 

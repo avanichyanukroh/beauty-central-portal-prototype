@@ -11,6 +11,7 @@ class ViewContent extends Component {
 		this.state = {
 			modalIsOpen: false
 		}
+
 		// On click method binds
 		this.handleOpenModal = this.handleOpenModal.bind(this);
 		this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -21,10 +22,10 @@ class ViewContent extends Component {
 
 	// On click methods
 	handleOpenModal() {
-		this.setState({modalIsOpen: true});
+		this.setState({ modalIsOpen: true });
 	}
 	handleCloseModal() {
-		this.setState({modalIsOpen: false});
+		this.setState({ modalIsOpen: false });
 	}
 
 	// Render methods
@@ -47,6 +48,7 @@ class ViewContent extends Component {
 	componentDidMount() {
 		pcoded();
 	}
+
 	render() {
 		return (
 			<div className="main-body">
