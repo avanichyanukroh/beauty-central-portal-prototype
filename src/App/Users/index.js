@@ -84,7 +84,7 @@ class Users extends Component {
 														</tbody>
 														<tfoot>
 															<tr>
-															<th>User</th>
+																<th>User</th>
 																<th>Email</th>
 																<th>Gender</th>
 																<th>Race</th>

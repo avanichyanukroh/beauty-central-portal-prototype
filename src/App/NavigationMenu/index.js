@@ -50,8 +50,8 @@ class NavigationMenu extends Component {
                                     <span className="pcoded-mtext">Subscription</span>
                                 </a>
                                 <ul className="pcoded-submenu">
-                                    <li><Link to="/App/ViewContent">Subscribers</Link></li>
-                                    <li><Link to="/App/Discover">Products</Link></li>
+                                    <li><Link to="/App/Subscribers">Subscribers</Link></li>
+                                    <li><Link to="/App/Products">Products</Link></li>
                                 </ul>
                             </li>
                         </ul>

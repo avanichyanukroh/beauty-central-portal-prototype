@@ -106,6 +106,41 @@ const initialState = {
             likes: "5",
             joined: "03/29/19"
         }
+    ],
+    subscribers: [
+        {
+            user_id: 1,
+            firstName: "Taylor",
+            lastName: "Swift",
+            email: "TSwift@gmail.com",
+            lastProductChoice: "A",
+            start: "03/01/19",
+            end: "None",
+            active: true,
+            cancellationReason: "None"
+        },
+        {
+            user_id: 2,
+            firstName: "Kim",
+            lastName: "Kardashian",
+            email: "KKardashian@gmail.com",
+            lastProductChoice: "B",
+            start: "03/14/19",
+            end: "None",
+            active: true,
+            cancellationReason: "None"
+        },
+        {
+            user_id: 3,
+            firstName: "Megan",
+            lastName: "Fox",
+            email: "MFox@gmail.com",
+            lastProductChoice: "C",
+            start: "03/15/19",
+            end: "None",
+            active: true,
+            cancellationReason: "None"
+        }
     ]
 }
 
