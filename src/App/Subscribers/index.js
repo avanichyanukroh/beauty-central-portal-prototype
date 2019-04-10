@@ -29,7 +29,7 @@ class Subscribers extends Component {
     }
     
     componentDidMount() {
-		pcoded();
+		// pcoded();
     }
     
 	render() {

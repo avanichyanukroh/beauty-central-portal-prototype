@@ -31,7 +31,7 @@ class Users extends Component {
     }
     
     componentDidMount() {
-		pcoded();
+		// pcoded();
     }
     
 	render() {

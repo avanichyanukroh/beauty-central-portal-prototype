@@ -5,7 +5,7 @@ import BreadCrumb from 'ReusableComponent/BreadCrumb';
 
 class Dashboard extends Component {
 	componentDidMount() {
-		pcoded();
+		// pcoded();
 	}
 	
 	render() {

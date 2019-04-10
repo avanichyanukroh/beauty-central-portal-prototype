@@ -46,7 +46,7 @@ class ViewContent extends Component {
 	}
 
 	componentDidMount() {
-		pcoded();
+		// pcoded();
 	}
 
 	render() {
