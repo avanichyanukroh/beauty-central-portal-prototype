@@ -1,20 +1,49 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { pcoded } from 'assets/js/pcoded.js';
+
+import 'App/NavigationMenu/index.css';
 
 class NavigationMenu extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isCollapsed: false
+        }
+
+        // Onclick method binding
+        this.handleMobileMenuToggle = this.handleMobileMenuToggle.bind(this);
+    }
+    
+    handleMobileMenuToggle() {
+        console.log('this ran')
+        // this.setState((prevState) => ({isCollapsed: !prevState.isCollapsed}))
+    }
+
+    componentDidMount() {
+		pcoded();
+    }
+
     render() {
+        console.log('refreshed')
         return (
             <nav className="pcoded-navbar">
                 <div className="navbar-wrapper">
                 {/* <!-- put Logo is hear --> */}
                 <div className="navbar-brand header-logo">
-                    <a href="index.html" className="b-brand">
+                    <Link to="/App/Dashboard" className="b-brand">
                         <div className="b-bg">
                             <i className="feather icon-trending-up"></i>
                         </div>
                         <span className="b-title">Beauty Central</span>
-                    </a>
-                    <a className="mobile-menu" id="mobile-collapse" style={{cursor: "pointer"}}><span></span></a>
+                    </Link>
+                    <div
+                        className="mobile-menu"
+                        id="mobile-collapse"
+                        style={{cursor: "pointer"}}
+                    >
+                        <span></span>
+                    </div>
                 </div>
                     {/* <!-- end Logo is hear --> */}
                     <div className="navbar-content scroll-div">
