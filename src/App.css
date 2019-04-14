@@ -1,0 +1,11 @@
+/* This style sheet is to override the shards and bootstrap ui library */
+
+.modal-backdrop {
+    opacity: 1 !important;
+    background: rgba(0,0,0,.4);
+    z-index: 1080;
+}
+
+.modal {
+    z-index: 1100;
+}
