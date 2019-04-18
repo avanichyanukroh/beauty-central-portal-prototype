@@ -136,37 +136,37 @@ class Users extends React.Component {
                         <CardHeader className="border-bottom">
                             <h6 className="m-0">Active Users</h6>
                         </CardHeader>
-                        <CardBody className="p-0 pb-3">
+                        <CardBody className="p-0 pb-3" style={{overflowX: "auto"}}>
                             <table className="table table-hover mb-0">
-                            <thead className="bg-light">
-                                <tr>
-                                    <th style={{cursor: "pointer"}}>User <i className="material-icons">arrow_upward</i></th>
-                                    {/* <i class="material-icons">arrow_downward</i> */}
-                                    <th style={{cursor: "pointer"}}>Email</th>
-                                    <th style={{cursor: "pointer"}}>Gender</th>
-                                    <th style={{cursor: "pointer"}}>Race</th>
-                                    <th style={{cursor: "pointer"}}>Hair Type</th>
-                                    <th style={{cursor: "pointer"}}>Skin Type</th>
-                                    <th style={{cursor: "pointer"}}>Comments</th>
-                                    <th style={{cursor: "pointer"}}>Likes</th>
-                                    <th style={{cursor: "pointer"}}>Joined</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {users.map(user => (
-                                    <tr key={user.user_id}>
-                                        <td>{user.firstName} {user.lastName}</td>
-                                        <td>{user.email}</td>
-                                        <td>{user.gender}</td>
-                                        <td>{user.race}</td>
-                                        <td>{user.hairType}</td>
-                                        <td>{user.skinType}</td>
-                                        <td>{user.comments}</td>
-                                        <td>{user.likes}</td>
-                                        <td>{user.joined}</td>
+                                <thead className="bg-light">
+                                    <tr>
+                                        <th style={{cursor: "pointer"}}>User <i className="material-icons">arrow_upward</i></th>
+                                        {/* <i class="material-icons">arrow_downward</i> */}
+                                        <th style={{cursor: "pointer"}}>Email</th>
+                                        <th style={{cursor: "pointer"}}>Gender</th>
+                                        <th style={{cursor: "pointer"}}>Race</th>
+                                        <th style={{cursor: "pointer"}}>Hair Type</th>
+                                        <th style={{cursor: "pointer"}}>Skin Type</th>
+                                        <th style={{cursor: "pointer"}}>Comments</th>
+                                        <th style={{cursor: "pointer"}}>Likes</th>
+                                        <th style={{cursor: "pointer"}}>Joined</th>
                                     </tr>
-                                ))}
-                            </tbody>
+                                </thead>
+                                <tbody>
+                                    {users.map(user => (
+                                        <tr key={user.user_id}>
+                                            <td>{user.firstName} {user.lastName}</td>
+                                            <td>{user.email}</td>
+                                            <td>{user.gender}</td>
+                                            <td>{user.race}</td>
+                                            <td>{user.hairType}</td>
+                                            <td>{user.skinType}</td>
+                                            <td>{user.comments}</td>
+                                            <td>{user.likes}</td>
+                                            <td>{user.joined}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
                             </table>
                         </CardBody>
                     </Card>

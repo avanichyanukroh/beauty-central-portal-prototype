@@ -104,33 +104,33 @@ class Subscribers extends React.Component {
                         <CardHeader className="border-bottom">
                             <h6 className="m-0">Active Users</h6>
                         </CardHeader>
-                        <CardBody className="p-0 pb-3">
+                        <CardBody className="p-0 pb-3" style={{overflowX: "auto"}}>
                             <table className="table table-hover mb-0">
-                            <thead className="bg-light">
-                                <tr>
-                                    <th style={{cursor: "pointer"}}>User <i className="material-icons">arrow_upward</i></th>
-                                    {/* <i class="material-icons">arrow_downward</i> */}
-                                    <th style={{cursor: "pointer"}}>Email</th>
-                                    <th style={{cursor: "pointer"}}>Last Product Choice</th>
-                                    <th style={{cursor: "pointer"}}>Start</th>
-                                    <th style={{cursor: "pointer"}}>End</th>
-                                    <th style={{cursor: "pointer"}}>Active</th>
-                                    <th style={{cursor: "pointer"}}>Cancellation Reason</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {subscribers.map(subscriber => (
-                                    <tr key={subscriber.user_id}>
-                                        <td>{subscriber.firstName} {subscriber.lastName}</td>
-                                        <td>{subscriber.email}</td>
-                                        <td>{subscriber.lastProductChoice}</td>
-                                        <td>{subscriber.start}</td>
-                                        <td>{subscriber.end}</td>
-                                        <td>{subscriber.active ? "Yes" : "No"}</td>
-                                        <td>{subscriber.cancellationReason}</td>
+                                <thead className="bg-light">
+                                    <tr>
+                                        <th style={{cursor: "pointer"}}>User <i className="material-icons">arrow_upward</i></th>
+                                        {/* <i class="material-icons">arrow_downward</i> */}
+                                        <th style={{cursor: "pointer"}}>Email</th>
+                                        <th style={{cursor: "pointer"}}>Last Product Choice</th>
+                                        <th style={{cursor: "pointer"}}>Start</th>
+                                        <th style={{cursor: "pointer"}}>End</th>
+                                        <th style={{cursor: "pointer"}}>Active</th>
+                                        <th style={{cursor: "pointer"}}>Cancellation Reason</th>
                                     </tr>
-                                ))}
-                            </tbody>
+                                </thead>
+                                <tbody>
+                                    {subscribers.map(subscriber => (
+                                        <tr key={subscriber.user_id}>
+                                            <td>{subscriber.firstName} {subscriber.lastName}</td>
+                                            <td>{subscriber.email}</td>
+                                            <td>{subscriber.lastProductChoice}</td>
+                                            <td>{subscriber.start}</td>
+                                            <td>{subscriber.end}</td>
+                                            <td>{subscriber.active ? "Yes" : "No"}</td>
+                                            <td>{subscriber.cancellationReason}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
                             </table>
                         </CardBody>
                     </Card>
