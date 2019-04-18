@@ -1,1 +1,3 @@
-### Beauty Central README Currently Under Construction
+### Beauty Central Portal Prototype
+
+This repo was created for demo and display purposes.
